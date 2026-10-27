@@ -1,0 +1,192 @@
+{
+  "_comment": "Paths are relative to this file. assets_dir holds the cleaned files; references_dir holds scenario.md, phase-prompts.md, gates.md and answer-key.md; seed_content is optional. Optional: app_id (keep the same GUID across versions), plugin.color_icon / plugin.outline_icon (paths to your own 192x192 and 32x32 PNGs). Bump version for every re-release. files_per_asset_skill (default 18, max 19) caps sample files per generated <kit>-assets-N skill (files are stored as base64 JSON; payload also capped at about 9.5 MB per skill). No archives: list the files themselves; each must be under about 3.5 MB.",
+  "kit_id": "caldova-uc4",
+  "prefix": "UC4-",
+  "title": "Caldova UC4 Demo: Appointing Northpoint Specialty Underwriters as an MGA",
+  "summary": "A fictional insurance carrier appoints a managing general agent for a five-state small-business cyber program, from diligence and regulatory structuring to negotiation, committee approval, signing and go-live.",
+  "version": "1.0.1",
+  "as_of": "October 15, 2026",
+  "root_folder": "Caldova UC4 Demo",
+  "start_phrase": "start the Caldova UC4 demo",
+  "trigger_phrases": [
+    "start the Caldova UC4 demo",
+    "run UC4",
+    "run the Northpoint MGA scenario",
+    "begin the MGA onboarding demo"
+  ],
+  "kit_author": "Caldova Demo Kit",
+  "output_marking": "DRAFT – Privileged & Confidential – Attorney Work Product – Sample data",
+  "required_plugin": "Legal for Cowork",
+  "phase_order": "1 Frame and Diligence > Gate A > 2 Precedent and Standards > (spot check) > 3 Regulatory and Analysis > Gate B > 4 Drafting and Negotiation > Gate C > 5 Approve and Execute > Gate D > Gate E > 6 Operationalize",
+  "phases": [
+    "Frame and Diligence",
+    "Precedent and Standards",
+    "Regulatory and Analysis",
+    "Drafting and Negotiation",
+    "Approve and Execute",
+    "Operationalize"
+  ],
+  "required_skills": [
+    {
+      "name": "improve-legal-prompt",
+      "phases": "1",
+      "purpose": "Sharpen the kickoff brief"
+    },
+    {
+      "name": "summarize-legal-matters",
+      "phases": "1",
+      "purpose": "Deal activity from mail, Teams and calendar"
+    },
+    {
+      "name": "build-case-chronology",
+      "phases": "1",
+      "purpose": "Cited diligence chronology (Ridgeway, Ohio exam, 2026 diligence)"
+    },
+    {
+      "name": "create-playbook",
+      "phases": "2",
+      "purpose": "MGA playbook from four signed agreements"
+    },
+    {
+      "name": "compare-key-terms",
+      "phases": "2",
+      "purpose": "Key-terms grid across signed MGA agreements"
+    },
+    {
+      "name": "analyze-related-contracts",
+      "phases": "2",
+      "purpose": "In-force terms of the affiliate agreement family"
+    },
+    {
+      "name": "compare-across-jurisdictions",
+      "phases": "3",
+      "purpose": "MGA rules across OH, MI, IN, PA, IL"
+    },
+    {
+      "name": "identify-regulatory-gaps",
+      "phases": "3",
+      "purpose": "Term sheet vs state rules, guidelines, standards and treaty"
+    },
+    {
+      "name": "legal-reasoning",
+      "phases": "3",
+      "purpose": "Authority, remittance, data and consent analysis"
+    },
+    {
+      "name": "draft-legal-memo",
+      "phases": "3",
+      "purpose": "Privileged structuring memo to the GC and CUO"
+    },
+    {
+      "name": "draft-new-contract",
+      "phases": "4",
+      "purpose": "MGA agreement from the best-fit precedent"
+    },
+    {
+      "name": "summarize-redlines",
+      "phases": "4",
+      "purpose": "Explain Northpoint's markup"
+    },
+    {
+      "name": "review-contract",
+      "phases": "4",
+      "purpose": "Markup vs playbook, term sheet and Gate A conditions"
+    },
+    {
+      "name": "edit-contract",
+      "phases": "4",
+      "purpose": "Tracked-changes counter-markup"
+    },
+    {
+      "name": "check-defined-terms",
+      "phases": "5",
+      "purpose": "Defined-term audit"
+    },
+    {
+      "name": "check-cross-references",
+      "phases": "5",
+      "purpose": "Cross-reference audit"
+    },
+    {
+      "name": "check-execution-readiness",
+      "phases": "5",
+      "purpose": "Ready-to-sign check"
+    },
+    {
+      "name": "draft-minutes-and-resolutions",
+      "phases": "5",
+      "purpose": "Program Committee minutes and resolution"
+    },
+    {
+      "name": "extract-obligations-and-deadlines",
+      "phases": "6",
+      "purpose": "Obligations and deadlines tracker"
+    },
+    {
+      "name": "explain-legal-concepts",
+      "phases": "6",
+      "purpose": "Plain-English one-pager for program and operations teams"
+    }
+  ],
+  "assets_dir": "stage",
+  "references_dir": "references",
+  "seed_content": "seed-content.json",
+  "folders": {
+    "00 Start Here": [
+      "caldova-uc4-workflow.html"
+    ],
+    "01 Diligence": [
+      "UC4-Ridgeway Mutual Program Termination Notice 2023-06-28.docx",
+      "UC4-Northpoint Response to Ridgeway Termination 2023-07-14.docx",
+      "UC4-Ohio DOI Market Conduct Examination Report - Northpoint 2024-04-15.docx",
+      "UC4-Northpoint E&O Policy Declarations 2026-27.docx",
+      "UC4-Northpoint Diligence Questionnaire and Responses.xlsx"
+    ],
+    "02 Existing Agreements": [
+      "UC4-Producer Agreement - Northpoint Insurance Agency 2021.docx",
+      "UC4-Producer Agreement Amendment No 1 2022.docx",
+      "UC4-Producer Agreement Amendment No 2 2023.docx",
+      "UC4-Profit Commission Addendum 2023.docx"
+    ],
+    "03 Precedents": [
+      "UC4-Signed MGA Agreement - Bluewater Marine Underwriters (2022).docx",
+      "UC4-Signed MGA Agreement - Summit Habitational Programs (2023).docx",
+      "UC4-Signed MGA Agreement - TriState Contractors Program Managers (2024).docx",
+      "UC4-Signed MGA Agreement - Keystone Professional Lines (2025).docx"
+    ],
+    "04 Standards and Regulation": [
+      "UC4-Caldova Delegated Authority Guidelines.docx",
+      "UC4-Caldova Third-Party Oversight and Data Security Standards.docx",
+      "UC4-State MGA Requirements - Reference Digest (OH MI IN PA IL).docx",
+      "UC4-Reinsurance Treaty Excerpts - Caldova Cyber Quota Share 2026.docx"
+    ],
+    "05 Negotiation": [
+      "UC4-Approved MGA Term Sheet - Northpoint Cyber Program 2026-09-09.docx",
+      "UC4-MGA Agreement Draft v1 - Northpoint Markup 2026-09-29.docx"
+    ],
+    "06 Committee and Execution": [
+      "UC4-Program Committee Meeting Transcript 2026-10-13.docx",
+      "UC4-Program Committee Minutes Template.docx",
+      "UC4-Signatory and Authority List.xlsx",
+      "UC4-Program Operations Calendar - Northpoint Cyber.xlsx"
+    ]
+  },
+  "plugin": {
+    "name_short": "Caldova Legal Demo (UC4)",
+    "name_full": "Caldova Insurance Legal Demo – UC4 MGA Onboarding",
+    "desc_short": "Fictional MGA appointment demo using the Legal for Cowork skills",
+    "desc_full": "A self-contained demo kit for Copilot Cowork. It deploys 23 fictional deal files for Caldova Insurance's appointment of Northpoint Specialty Underwriters as a managing general agent for a five-state small-business cyber program, plus sample emails, Teams messages and calendar entries, to a SharePoint site or OneDrive folder you choose. It checks that the 20 Legal for Cowork skills are installed, then walks a presenter through six phases and five human approval gates: diligence, precedent playbook, regulatory structuring, negotiation of the MGA's markup, committee approval and execution readiness, and go-live obligations. Requires the Legal for Cowork plugin. All content is fictional sample data for demonstration only; outputs are drafts for counsel review and are not legal advice.",
+    "developer": {
+      "name": "Caldova Demo Kit",
+      "websiteUrl": "https://www.example.com/caldova-demo-kit",
+      "privacyUrl": "https://www.example.com/caldova-demo-kit/privacy",
+      "termsOfUseUrl": "https://www.example.com/caldova-demo-kit/terms"
+    },
+    "accent": "#14233C",
+    "band": "#0F7C80",
+    "icon_letter": "C",
+    "icon_label": "UC4"
+  },
+  "short_title": "Caldova UC4 (Northpoint MGA onboarding)",
+  "files_per_asset_skill": 18
+}

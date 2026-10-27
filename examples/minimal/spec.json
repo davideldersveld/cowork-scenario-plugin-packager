@@ -1,0 +1,56 @@
+{
+  "_comment": "Runnable minimal scenario used for documentation and smoke testing.",
+  "kit_id": "example-scenario",
+  "prefix": "DEMO-",
+  "title": "Example Cowork Scenario",
+  "summary": "A minimal fictional scenario that demonstrates packaging, setup, guided execution, approval, and reset.",
+  "version": "1.0.0",
+  "as_of": "October 27, 2026",
+  "root_folder": "Example Cowork Scenario",
+  "start_phrase": "start the example scenario",
+  "trigger_phrases": [
+    "start the example scenario",
+    "run the example demo"
+  ],
+  "kit_author": "David Eldersveld",
+  "output_marking": "SAMPLE DATA - FOR DEMONSTRATION ONLY",
+  "required_plugin": "Example prerequisite plugin",
+  "phase_order": "1 Review > Gate A > 2 Recommend",
+  "phases": [
+    "Review",
+    "Recommend"
+  ],
+  "required_skills": [
+    {
+      "name": "example-review",
+      "phases": "1",
+      "purpose": "Review the fictional scenario brief"
+    }
+  ],
+  "assets_dir": "assets",
+  "references_dir": "references",
+  "seed_content": "seed-content.json",
+  "folders": {
+    "00 Start Here": [
+      "DEMO-Scenario Brief.txt"
+    ]
+  },
+  "plugin": {
+    "name_short": "Example Scenario",
+    "name_full": "Example Copilot Cowork Scenario",
+    "desc_short": "Minimal fictional scenario for testing the Cowork plugin packager",
+    "desc_full": "A self-contained fictional scenario for testing the Copilot Cowork scenario plugin packager. It deploys one sample file, checks one illustrative prerequisite skill, guides the presenter through two phases and one approval gate, and includes an answer key. Sample content only.",
+    "developer": {
+      "name": "David Eldersveld",
+      "websiteUrl": "https://github.com/davideldersveld/cowork-scenario-plugin-packager",
+      "privacyUrl": "https://github.com/davideldersveld/cowork-scenario-plugin-packager/blob/main/README.md#security-and-privacy",
+      "termsOfUseUrl": "https://github.com/davideldersveld/cowork-scenario-plugin-packager/blob/main/LICENSE"
+    },
+    "accent": "#14233C",
+    "band": "#2563EB",
+    "icon_letter": "E",
+    "icon_label": "DEMO"
+  },
+  "short_title": "Example scenario",
+  "files_per_asset_skill": 18
+}

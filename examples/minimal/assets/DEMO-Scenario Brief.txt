@@ -1,0 +1,9 @@
+EXAMPLE SCENARIO BRIEF
+
+This is fictional sample data for demonstrating the Copilot Cowork scenario plugin packager.
+
+Objective:
+Review the scenario brief, identify the stated delivery risk, and recommend a mitigation.
+
+Planted issue:
+The launch date is scheduled before the required security review is complete.
